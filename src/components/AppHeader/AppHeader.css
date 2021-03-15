@@ -3,9 +3,7 @@
   width: 100vw;
 }
 .menu {
-  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   max-width: 1312px;
   height: 56px;
@@ -23,9 +21,11 @@
 }
 
 .menu__link:nth-child(2) {
-  justify-self: start;
-  margin-right: auto;
   margin-left: 9px;
+}
+
+.menu__link:last-child {
+  margin-left: auto;
 }
 
 .menu__text {
@@ -35,8 +35,5 @@
 }
 
 .menu__logo {
-  position: absolute;
-  top: 19px;
-  left: 50%;
-  transform: translate(-50%, 0);
+  margin-left: 82px;
 }

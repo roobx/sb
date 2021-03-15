@@ -18,13 +18,13 @@ class AppHeader extends React.Component {
             <ListIcon type="secondary" />
             <p className="text_type_main-default menu__text">Лента заказов</p>
           </a>
+          <div className="menu__logo">
+            <Logo />
+          </div>
           <a href="#" className="menu__link">
             <ProfileIcon type="secondary" />
             <p className="text_type_main-default menu__text">Личный кабинет</p>
           </a>
-          <div className="menu__logo">
-            <Logo />
-          </div>
         </nav>
       </header>
     );
