@@ -2,14 +2,12 @@
   font-family: 'Jet Brains Mono';
   color: #F2F2F3;
   max-width: 600px;
+  max-height: 912px;
+  overflow-y: scroll;
 }
 
-.burger-ingredients__title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 40px;
-  color: #F2F2F3;
+p {
+  margin: 0;
 }
 
 .burger-ingredients__menu {
@@ -26,18 +24,17 @@
   gap: 32px 40px;
 }
 
-.burger-ingredients__categories {
-  margin: 40px 0 24px;
-}
-
 .burger-ingredients__article {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 272px;
 }
 
 .burger-ingredients__cost {
-  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .burger-ingredients__categories {
@@ -47,6 +44,6 @@
   line-height: 30px;
 }
 
-.burger-ingredients__description {
-  margin: 0;
+.tab {
+  width: 120px;
 }
