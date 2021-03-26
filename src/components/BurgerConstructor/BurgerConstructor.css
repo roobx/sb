@@ -1,0 +1,28 @@
+.burger-constructor {
+  width: 600px;
+  color: #F2F2F3;
+}
+
+.burger-constructor__elements {
+  max-height: 464px;
+  overflow-y: scroll;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.burger-constructor__element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.burger-constructor__total {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.burger-constructor__cost {
+  display: flex;
+}

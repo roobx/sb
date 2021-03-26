@@ -3,6 +3,13 @@
   flex-direction: column;
   height: 100vh;
   background-color: #131316;
+  color: #F2F2F3;
+}
+
+.app__title {
+  width: 1312px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main {
@@ -10,4 +17,17 @@
   justify-content: space-between;
   width: 1240px;
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track { 
+  background: #2F2F37;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid #8585AD;
+  background: #8585AD;
 }
