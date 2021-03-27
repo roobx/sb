@@ -14,7 +14,7 @@ class BurgerIngredients extends React.Component {
             <li><Tab text='Булки' type='current' /></li>
             <li><Tab text='Соусы' /></li>
             <li><Tab text='Начинки' /></li>
-          </ul> 
+          </ul>
         </nav>
         <div className="burger-ingredients__content">
           <h3 className='text text_type_main-medium mt-5 mb-3'>Булки</h3>
@@ -39,7 +39,7 @@ class BurgerIngredients extends React.Component {
           </div>
           <h3 className='text text_type_main-medium mt-5 mb-3'>Соусы</h3>
           <div className='burger-ingredients__items'>
-          <article className='burger-ingredients__article'>
+            <article className='burger-ingredients__article'>
               <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
               <div className='burger-ingredients__cost mt-1 mb-1'>
                 <p className='text text_type_digits-default mr-1'>30</p>
@@ -56,6 +56,7 @@ class BurgerIngredients extends React.Component {
               <p className='text text_type_main-default'>Соус фирменный Space Sauce</p>
             </article>
             <article className='burger-ingredients__article'>
+              <Counter count='1' />
               <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
               <div className='burger-ingredients__cost mt-1 mb-1'>
                 <p className='text text_type_digits-default mr-1'>30</p>
@@ -68,7 +69,7 @@ class BurgerIngredients extends React.Component {
               <div className='burger-ingredients__cost mt-1 mb-1'>
                 <p className='text text_type_digits-default mr-1'>30</p>
                 <CurrencyIcon />
-                
+
               </div>
               <p className='text text_type_main-default'>Флюоресцентная булка R2-D3</p>
             </article>
@@ -76,7 +77,6 @@ class BurgerIngredients extends React.Component {
           <h3 className='text text_type_main-medium mt-5 mb-3'>Начинки</h3>
           <div className='burger-ingredients__items'>
             <article className='burger-ingredients__article'>
-              <Counter count='1' />
               <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
               <div className='burger-ingredients__cost mt-1 mb-1'>
                 <p className='text text_type_digits-default mr-1'>20</p>

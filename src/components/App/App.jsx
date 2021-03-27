@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app">
       <AppHeader />
-      <h1 className="app__title text text_type_main-large mt-5 mb-3">Соберите бургер</h1>
+      <h1 className="app__title text text_type_main-large mt-5">Соберите бургер</h1>
       <main className="main">
         <BurgerIngredients />
         <BurgerConstructor />

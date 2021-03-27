@@ -4,7 +4,7 @@
 }
 
 .burger-constructor__elements {
-  max-height: 464px;
+  max-height: 444px;
   overflow-y: scroll;
   list-style-type: none;
   margin: 0;
@@ -25,4 +25,13 @@
 
 .burger-constructor__cost {
   display: flex;
+  align-items: center;
+}
+
+.burger-constructor__text {
+  font-family: Iceland;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 36px;
 }

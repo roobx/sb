@@ -27,6 +27,9 @@
 
 .button_size_large {
 	padding: 20px 40px;
+	font-family: JetBrains Mono;
+	font-size: 16px;
+	line-height: 24px;
 }
 .button_size_medium {
 	padding: 16px 40px;

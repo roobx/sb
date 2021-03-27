@@ -32,13 +32,17 @@ class BurgerConstructor extends React.Component {
             <DragIcon />
             <ConstructorElement text='Хрустящие минеральные кольца' price={80} thumbnail={img} />
           </li>
+          <li className='burger-constructor__element mr-1'>
+            <DragIcon />
+            <ConstructorElement text='Хрустящие минеральные кольца' price={80} thumbnail={img} />
+          </li>
         </ul>
-        <div className='burger-constructor__element mr-2'>
+        <div className='burger-constructor__element mt-2 mr-2'>
           <ConstructorElement type='bottom' isLocked text='Краторная булка N-200i (низ)' price={20} thumbnail={img} />
         </div>
         <div className='burger-constructor__total mt-5 mr-2'>
           <div className='burger-constructor__cost mr-5'>
-            <p className='text text_type_digits-default mr-1'>610</p>
+            <p className='text burger-constructor__text mr-1'>610</p>
             <CurrencyIcon />
           </div>
           <Button type='primary' size='large' children='Оформить заказ' />

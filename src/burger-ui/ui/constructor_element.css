@@ -1,5 +1,5 @@
 .constructor-element {
-    padding: 20px 35px;
+    padding: 16px 35px;
     display: inline-block;
     border-radius: var(--common-border-radius-s);
     background: var(--background-element);
