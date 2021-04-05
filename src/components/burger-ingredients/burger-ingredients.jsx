@@ -1,5 +1,5 @@
 import React from "react";
-import "./BurgerIngredients.css";
+import styles from "./burger-ingredients.module.css";
 import { Tab } from '../../burger-ui/ui';
 import { CurrencyIcon } from "../../burger-ui/ui/icons";
 import { Counter } from "../../burger-ui/ui/counter";
@@ -8,29 +8,29 @@ import img from "../../images/img.png";
 class BurgerIngredients extends React.Component {
   render() {
     return (
-      <section className="burger-ingredients">
+      <section className={styles.burger_ingredients}>
         <nav>
-          <ul className="burger-ingredients__menu">
+          <ul className={styles.menu}>
             <li><Tab text='Булки' type='current' /></li>
             <li><Tab text='Соусы' /></li>
             <li><Tab text='Начинки' /></li>
           </ul>
         </nav>
-        <div className="burger-ingredients__content">
+        <div className={styles.content}>
           <h3 className='text text_type_main-medium mt-5 mb-3'>Булки</h3>
-          <div className='burger-ingredients__items'>
-            <article className='burger-ingredients__article'>
+          <div className={styles.items}>
+            <article className={styles.article}>
               <Counter count='1' />
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>20</p>
                 <CurrencyIcon />
               </div>
               <p className='text text_type_main-default'>Краторная булка N-200i</p>
             </article>
-            <article className='burger-ingredients__article'>
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+            <article className={styles.article}>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>20</p>
                 <CurrencyIcon />
               </div>
@@ -38,35 +38,35 @@ class BurgerIngredients extends React.Component {
             </article>
           </div>
           <h3 className='text text_type_main-medium mt-5 mb-3'>Соусы</h3>
-          <div className='burger-ingredients__items'>
-            <article className='burger-ingredients__article'>
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+          <div className={styles.items}>
+            <article className={styles.article}>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>30</p>
                 <CurrencyIcon />
               </div>
               <p className='text text_type_main-default'>Соус Spicy-X</p>
             </article>
-            <article className='burger-ingredients__article'>
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+            <article className={styles.article}>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>30</p>
                 <CurrencyIcon />
               </div>
               <p className='text text_type_main-default'>Соус фирменный Space Sauce</p>
             </article>
-            <article className='burger-ingredients__article'>
+            <article className={styles.article}>
               <Counter count='1' />
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>30</p>
                 <CurrencyIcon />
               </div>
               <p className='text text_type_main-default'>Краторная булка N-200i</p>
             </article>
-            <article className='burger-ingredients__article'>
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+            <article className={styles.article}>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>30</p>
                 <CurrencyIcon />
 
@@ -75,18 +75,18 @@ class BurgerIngredients extends React.Component {
             </article>
           </div>
           <h3 className='text text_type_main-medium mt-5 mb-3'>Начинки</h3>
-          <div className='burger-ingredients__items'>
-            <article className='burger-ingredients__article'>
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+          <div className={styles.items}>
+            <article className={styles.article}>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>20</p>
                 <CurrencyIcon />
               </div>
               <p className='text text_type_main-default'>Краторная булка N-200i</p>
             </article>
-            <article className='burger-ingredients__article'>
-              <img className='burger-ingredients__img' src={img} alt='картинка ингредиента.' />
-              <div className='burger-ingredients__cost mt-1 mb-1'>
+            <article className={styles.article}>
+              <img className={styles.img} src={img} alt='картинка ингредиента.' />
+              <div className={`${styles.cost} mt-1 mb-1`}>
                 <p className='text text_type_digits-default mr-1'>20</p>
                 <CurrencyIcon />
               </div>
