@@ -17,6 +17,10 @@
   justify-content: flex-end;
 }
 
+.element:last-child {
+  margin-bottom: 0;
+}
+
 .total {
   display: flex;
   align-items: center;
