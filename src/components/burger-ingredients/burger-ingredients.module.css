@@ -50,3 +50,7 @@ p {
 .tab {
   width: 120px;
 }
+
+.text {
+  text-align: center;
+}

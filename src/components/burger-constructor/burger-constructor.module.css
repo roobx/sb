@@ -4,7 +4,7 @@
 }
 
 .elements {
-  max-height: 444px;
+  max-height: 464px;
   overflow-y: scroll;
   list-style-type: none;
   margin: 0;
@@ -19,6 +19,13 @@
 
 .element:last-child {
   margin-bottom: 0;
+}
+
+.element_fullwidth {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 536px;
 }
 
 .total {

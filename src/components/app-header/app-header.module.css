@@ -5,9 +5,14 @@
 .menu {
   display: flex;
   align-items: center;
-  max-width: 1312px;
+  max-width: 1248px;
   height: 56px;
   margin: 0 auto;
+}
+
+.menu_part_left {
+  display: flex;
+  flex-basis: 35%;
 }
 
 .link {
@@ -20,20 +25,15 @@
   color: var(--text-primary-color);
 }
 
-.link:nth-child(2) {
-  margin-left: 9px;
-}
+.link_position_last {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 35%;
 
-.link:last-child {
-  margin-left: auto;
-}
-
-.text {
-  padding: 0;
-  margin: 0;
-  margin-left: 9px;
 }
 
 .logo {
-  margin-left: 82px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
