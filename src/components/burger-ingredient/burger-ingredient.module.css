@@ -1,0 +1,16 @@
+.article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 272px;
+}
+
+.cost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  text-align: center;
+}

@@ -15,7 +15,7 @@ function App() {
       </h1>
       <main className={`${styles.main} pl-5 pr-5`}>
         <BurgerIngredients ingredients={data} />
-        <BurgerConstructor constructor={data} />
+        <BurgerConstructor constructorIngredients={data} />
       </main>
     </div>
   );

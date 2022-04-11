@@ -7,25 +7,30 @@ import {
   DragIcon,
 } from "@ya.praktikum/react-developer-burger-ui-components";
 import styles from "./burger-constructor.module.css";
-import img from "../../images/img-small.png";
 
-const BurgerConstructor = ({ constructor }) => {
+import { ingredientPropType } from "../../utils/prop-types";
+
+const BurgerConstructor = ({ constructorIngredients }) => {
+  const bun = constructorIngredients.find(
+    (ingredient) => ingredient.type === "bun"
+  );
+  const ingredients = constructorIngredients.filter(
+    (ingredient) => ingredient.type !== "bun"
+  );
+
   return (
     <section className={styles.burger_constructor}>
       <div className={`${styles.element} mb-4 mr-4`}>
         <ConstructorElement
           type="top"
           isLocked={true}
-          text={`Краторная булка N-200i (верх)`}
-          price={1255}
-          thumbnail={img}
+          text={`${bun.name} (верх)`}
+          price={bun.price}
+          thumbnail={bun.image}
         />
       </div>
       <ul className={styles.elements}>
-        {constructor.map((item, index) => {
-          if (item.type === "bun") {
-            return null;
-          }
+        {ingredients.map((item, index) => {
           return (
             <li className={`${styles.element} mb-4 mr-2`} key={index}>
               <DragIcon />
@@ -44,9 +49,9 @@ const BurgerConstructor = ({ constructor }) => {
         <ConstructorElement
           type="bottom"
           isLocked={true}
-          text={`Краторная булка N-200i (низ)`}
-          price={1255}
-          thumbnail={img}
+          text={`${bun.name} (низ)`}
+          price={bun.price}
+          thumbnail={bun.image}
         />
       </div>
       <div className={`${styles.total} mt-10 mr-4`}>
@@ -61,7 +66,8 @@ const BurgerConstructor = ({ constructor }) => {
 };
 
 BurgerConstructor.propTypes = {
-  data: PropTypes.arrayOf(PropTypes.object),
+  constructorIngredients: PropTypes.arrayOf(ingredientPropType.isRequired)
+    .isRequired,
 };
 
 export default BurgerConstructor;

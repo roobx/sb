@@ -1,11 +1,10 @@
 .header {
   background-color: var(--background);
-  width: 100vw;
 }
 .menu {
   display: flex;
   align-items: center;
-  max-width: 1248px;
+  max-width: 1240px;
   height: 56px;
   margin: 0 auto;
 }
@@ -21,7 +20,7 @@
   color: var(--text-inactive-color);
 }
 
-.link:first-child {
+.link_active {
   color: var(--text-primary-color);
 }
 
@@ -29,7 +28,6 @@
   display: flex;
   justify-content: flex-end;
   flex-basis: 35%;
-
 }
 
 .logo {
