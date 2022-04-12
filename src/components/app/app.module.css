@@ -6,22 +6,6 @@
   color: #f2f2f3;
 }
 
-.title {
-  width: 100%;
-  max-width: 1260px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-  width: 1240px;
-  margin: 0 auto;
-  height: 100%;
-  overflow: hidden;
-}
-
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -33,4 +17,12 @@
 ::-webkit-scrollbar-thumb {
   border: 3px solid #8585ad;
   background: #8585ad;
+}
+
+.detailPageWrap {
+  margin: 120px auto;
+}
+
+.detailHeader {
+  text-align: center;
 }
